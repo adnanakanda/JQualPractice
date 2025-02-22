@@ -1,11 +1,21 @@
 ﻿using SeleniumKP1_2.Framework.PageForms;
+using Allure.Commons;
+using NUnit.Allure.Attributes;
+using NUnit.Allure.Core;
 
 namespace SeleniumKP1_2.Framework.Tests
 {
+    [AllureNUnit]
+    [AllureSuite("Test prep Jqual")]
     internal class ManageCookieTest : BaseTest
     {
-
         [Test]
+        //[AllureIssue("BUG-1234")]
+        //[Ignore("Skipping due to known issue BUG-1234")]
+        [AllureTag("NUnit", "Selenium")]
+        //[AllureSeverity(SeverityLevel.normal)]
+        [AllureFeature("Manage Cookies")]
+        [AllureStory("Save and delete cookies")]
         public void TestCookieOperations()
         {
             var mainPage = new MainPage(driver);

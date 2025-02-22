@@ -53,4 +53,8 @@
     </None>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Framework\FeatureFile\" />
+  </ItemGroup>
+
 </Project>
